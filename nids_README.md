@@ -29,7 +29,7 @@ A machine learning-based Network Intrusion Detection System that monitors networ
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/nishanthselvakumar1302/network-ids
    cd nids-project
    ```
 
