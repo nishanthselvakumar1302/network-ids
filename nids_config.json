@@ -1,0 +1,27 @@
+# NIDS Configuration File
+{
+    "network": {
+        "interface": "eth0",
+        "monitor_subnets": ["192.168.1.0/24", "10.0.0.0/24"],
+        "excluded_ips": ["127.0.0.1", "::1"]
+    },
+    "detection": {
+        "anomaly_threshold": 0.1,
+        "attack_probability_threshold": 0.7,
+        "alert_cooldown_seconds": 60
+    },
+    "logging": {
+        "log_file": "nids.log",
+        "log_level": "INFO",
+        "max_log_size_mb": 100
+    },
+    "database": {
+        "alerts_db": "nids_alerts.db",
+        "backup_interval_hours": 24
+    },
+    "ml_models": {
+        "retrain_interval_hours": 168,
+        "model_save_path": "models/",
+        "feature_importance_threshold": 0.01
+    }
+}
